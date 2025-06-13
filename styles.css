@@ -13,6 +13,118 @@ a {
   text-decoration: none;
 }
 
+/* layout styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 140px 0;
+  gap: 40px;
+}
+
+.left,
+.right {
+  width: 500px;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up {
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.heading {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.random-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.info {
+  flex: 0 1 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.illustration {
+  flex: 1 1 23vh;
+  border: 4px solid rgb(130, 132, 255);
+  border-radius: 12px;
+}
+
+.subtext {
+  text-align: center;
+}
+
+.section-2 {
+  margin-bottom: 100px;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: center;
+  padding: 130px 0;
+}
+
+.quote-box {
+  flex: 0 1 780px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-to-action {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  padding: 50px 130px;
+  margin: 100px;
+  border-radius: 8px;
+}
+
+.cta-right .sign-up {
+  border: 2px solid white;
+}
+
+.footer {
+  text-align: center;
+  padding: 50px 0;
+}
+
 /* typographic styles */
 body {
   font-family: Roboto, sans-serif;
@@ -24,8 +136,9 @@ body {
   color: #f9faf8;
 }
 
-nav ul,
-.text {
+nav ul a,
+.text,
+.footer {
   font-size: 18px;
   color: #e5e7eb;
 }
@@ -36,20 +149,44 @@ nav ul,
 }
 
 .placeholder {
-    color: #fff;
+  color: #fff;
+}
+
+.sign-up {
+  font-weight: 600;
+  color: #fff;
 }
 
 .heading {
-    font-size: 36px;
-    font-weight: 900;
-    color: #1f2937;
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.subtext {
+  color: #555;
 }
 
 .quote {
-    font-size: 36px;
-    font-weight: 100;
-    font-style: italic;
-    color: #1f2937;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.quote-author {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cta-head {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.cta-text {
+  color: #eee;
 }
 
 /* color styles */
@@ -59,9 +196,17 @@ nav ul,
 }
 
 .sign-up {
-    background-color: #3882f6;
+  background-color: #3882f6;
 }
 
 .section-3 {
-    background-color: #e5e7eb;
+  background-color: #e5e7eb;
+}
+
+.right {
+  background-color: #666;
+}
+
+.call-to-action {
+  background-color: #3882f6;
 }
